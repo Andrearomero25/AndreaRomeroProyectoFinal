@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporativo</title>
+    <link rel="stylesheet" href="./Estilo/style.css">  
+    <link rel="stylesheet" href="./Estilo/ligth.css" class="theme">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+<body class="celeste">  
+  <header>
+    <!-- Rounded switch -->
+     <label class="switch">
+       <input type="checkbox" class="checkbox" id="checkbox">
+       <span class="slider round"></span>
+     </label>
+    <h2 class="logo">Corporativo</h2>
+    <input type="checkbox" id="check">
+     <label for="check" class="mostrar-menu">
+        &#8801
+    </label>
+    <nav class="menu">
+            <a href="">INICIO</a>
+            <a href="">SOBRE NOSOTROS</a>
+            <a href="">BLOG</a>
+        <label for="check" class="esconder-menu">
+             &#215
+        </label>
+    </nav>
+  </header>
+      <section id="baner">
+       <div class="contenido-baner">
+        <h3><span>CORPORATIVO:</span> DISEÑO WEB RESPONSIVE<br>MOBILE FRIENDLY</h3>
+        <a href="#" class="boton-empezar">EMPEZAR</a>
+       </div>
+      </section>
+  <main>
+   <section id="personas">
+    <article class="shadow p-3 mb-5 bg-body-tertiary rounded"> 
+        <img src="./Imagenes/Img/Marco.jpg" alt="Marcos ejecutivo de Triumph">
+        <h4>Hola mi nombre es Marcos, soy Ingeniero en Sistemas, Informatica y Ciberseguridad</h4>
+        <p>Te comento que trabajamos para la empresa "Triumph Studios". Para conocer mas sobre nosotros... </p>
+        <a href="#" class="boton-saber-mas">Saber Mas</a>
+    </article>
+    <article class="shadow p-3 mb-5 bg-body-tertiary rounded">
+        <img src="./Imagenes/Img/Any.jpg" alt="Any ejecutiva de Triumph">
+        <h4>Hola mi nombre es Any, soy Analista en Sistemas, Software y Lic. en Delitos Complejos</h4>
+        <p>Te comento que trabajamos para la empresa "Triumph Studios". Para conocer mas sobre nosotros... </p>
+        <a href="#" class="boton-saber-mas">Saber Mas</a>
+    </article>
+   </section>
+  </main>
+  <!-- <div id="carouselExample" class="carousel slide">           //DECIDI DEJAR SIN FUNCIONAMIENTO EL CAROUSEL, POSIBLEMENTE LO USE MAS ADELANTE
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Imagenes/Img/ofi1.jpeg" class="d-block w-100" alt="oficina central">
+      </div>
+      <div class="carousel-item">
+        <img src="Imagenes/Img/ofi2.jpg" class="d-block w-100" alt="oficina de ciberdelito">
+      </div>
+      <div class="carousel-item">
+        <img src="Imagenes/Img/ofi3.jpg" class="d-block w-100" alt="oficina de programacion">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> -->
+   <aside id="iconos">
+    <section class="contenido-iconos">
+        <div>
+            <i class="fa-solid fa-truck-fast fa-3x"></i>
+            <h6>Rapido</h6>
+            <p>Lorem ipsum, dolor sit </p>
+        </div>
+        <div>
+            <i class="fa-brands fa-accessible-icon fa-3x"></i>
+            <h6>Accesible</h6>
+            <p>Lorem ipsum, dolor sit </p>
+        </div>
+        <div id="icono-mobile">
+            <i class="fa-solid fa-mobile-screen fa-3x"></i>
+            <h6>Responsive</h6>
+            <p>Lorem ipsum, dolor sit </p>
+        </div>
+    </section>
+    <div class="boton-iconos">
+        <a href="#" class="boton-saber-mas">Saber Mas</a>
+    </div>
+   <script src="https://kit.fontawesome.com/6822be68b6.js"
+        crossorigin="anonymous"></script>
+   </aside>
+    <section id="contacto">
+        <h4>Contacta con nosotros</h4>
+        <form action="" id="form">
+            <div class="datos-form">
+                <div class="nombre">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required> 
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Ingrese su email" required>
+                </div>
+            </div>
+            <div class="mensaje">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                <!-- <p class="warnings" id="warnings"></p> -->
+            </div>
+            <div class="boton-formulario" id="enviar">
+                <a href="" type="submit" class="boton-saber-mas">Enviar Mensaje</a> 
+                <p class="warnings" id="warnings"></p>
+            </div>
+        </form>
+    </section>
+    <footer>
+            <div id="direccion" class="container">
+              <div class="row">
+                <div class="col-6 direccion">
+                  <h6>DIRECCION</h6>
+                  <P>Hipolito Yrigoyen 1248</P>
+                  <p>Corrientes - Capital</p>
+                  <p>Argentina</p>
+                </div>
+                <div class="col-6 direccion">
+                  <h6>EN LAS REDES</h6>
+                  <a href="https://www.facebook.com/andrea.romero.756/"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                  <a href="https://www.instagram.com/andre_romerooo/"><i class="fa-brands fa-square-instagram fa-lg"></i></a>
+                  <a href="https://www.linkedin.com/in/andrea-romero-47b0a2130/"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+                  <a href="https://twitter.com/AndreaRomero153"><i class="fa-brands fa-square-x-twitter fa-lg"></i></a>          
+                </div>
+              </div>
+              </div>
+            </div> 
+              <p class="texto fst-italic texto copy">&COPY: 11/11/2023 Andrea Elizabeth Romero</p>
+    </footer>
+          <script src="https://kit.fontawesome.com/6822be68b6.js" crossorigin="anonymous"></script>
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+          </script>
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+          <link src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+          <script src="./main.js"></script>
+</body>
+</html>

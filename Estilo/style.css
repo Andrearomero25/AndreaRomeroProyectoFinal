@@ -1,0 +1,417 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    color: black;
+    background-color: chocolate;
+}
+a{
+    color: rgb(4, 123, 162);
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  } 
+
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(255, 255, 255);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #260c25;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders  */
+   .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  } 
+   
+
+/* HEADER */
+
+header{
+    height: 100px;
+    background: rgb(60, 149, 137);
+    padding: 0 50px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.logo{
+    text-transform: uppercase;
+    color: black;
+    font-weight: 200;
+}
+
+.menu a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s; 
+}
+
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+
+.mostrar-menu{
+    order: 1;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: black;
+}
+
+#check{
+    display: none;
+}
+
+/* BANER */
+#baner{
+    padding: 0 50px;
+    background-image: url(../Imagenes/Img/edificio-de-oficinas-4.jpg);
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#baner::before{
+    content: " ";
+    background: rgba(77, 77, 92, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 45vh;
+    left: 0;
+}
+
+.contenido-baner{
+    position: relative;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenido-baner h3{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+
+.contenido-baner h3 span{
+    font-weight: 600;
+} 
+
+.boton-empezar{
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid rgb(60, 149, 137);
+    padding: 10px 20px;
+    align-self: baseline;
+    transition: all 0.4s;
+}
+
+.boton-empezar:hover{
+    background: rgb(115, 221, 206);
+}
+
+/* PERSONAS */
+#personas{
+    padding: 50px 50px 20px 50px;    /*(50px 50px) por si no funciona o me arrepiento */ 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#personas img{
+    border-radius: 100%;
+}
+
+#personas div{
+    padding: 30px 30px;
+}
+
+#personas div h4{
+    color:rgb(143, 105, 55);
+    font-size: 20px;
+    margin: 15px 0px;
+}
+
+#personas div p{
+    color: rgb(10, 20, 4);
+    font-size: 18px;
+}
+
+.boton-saber-mas{
+    display: inline-block; 
+    text-decoration: none;
+    /* color: #171402; */
+    color: black;
+    padding: 10px 30px;
+    border: 3px solid rgb(60, 149, 137);
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all 0.4s;
+}
+
+.boton-saber-mas:hover{
+    background: rgb(60, 149, 137);
+    color: #fff;
+}
+
+/* CARRUSEL                                Cuando necesite vamos a deshabilitar la opcion!
+.carousel-inner .carousel-item{
+    padding: 0 0 30px 0;
+} */
+
+/* ICONOS */
+#iconos{
+    padding: 0px 50px;
+    background-color: rgba(77, 77, 92, 0.6);
+}
+
+.contenido-iconos{
+    padding: 50px 50px 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.contenido-iconos div{
+    flex: 1;
+    margin: 20px 0px;
+    border-right: 2px solid rgba(255,255,255, 0.2);
+}
+
+#icono-mobile{
+    border: none;
+}
+
+.contenido-iconos div i{
+    color: rgb(61, 150, 139) ;
+}
+
+.contenido-iconos div h6{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 10px 0px;
+}
+
+.contenido-iconos div p{
+    color: rgba(255,255,255, 0.55);
+    font-size: 15px;
+}
+
+.boton-iconos{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/* FORMULARIO */
+#contacto{
+    background: rgb(61, 148, 136);
+    padding: 50px 0px;
+    color: #fff;
+}
+
+#contacto h4{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#contacto form{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.datos-form{
+    display: flex;
+}
+
+.datos-form div{
+    padding: 10px;
+    flex: 1;
+}
+
+form label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input,
+form textarea{
+    background: rgb(60, 149, 137);
+    border-radius: 10px;
+    border: 2px solid rgb(60, 190, 141);
+    padding: 10px 5px;
+    outline: 0;
+    color: #fff;
+    width: 100%;
+}
+
+form input:focus,
+form textarea:focus{
+    border-color: rgb(43, 130, 96);
+    box-shadow: 0 0 0 1px rgb(43, 130, 96);
+}
+
+form input::placeholder,
+form textarea::placeholder{
+    color: #fff;
+}
+
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+ .warnings{                      /* AGREGAMOS .warnings PARA QUE FUNCIONE CON JS */
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: lightseagreen;
+    padding-top: 20px;
+}
+
+.boton-formulario .boton-saber-mas{
+    display: block;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.boton-formulario .boton-saber-mas:hover{
+    background: rgb(39, 95, 88) ;
+}
+
+/* FOOTER */
+footer{
+    background: rgba(77, 77, 92, 0.6);
+    color: #120b0baf;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+    /* HEADER */
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+
+    .celeste {        /* AGREGAMOS .celeste PARA QUE CAMBIE DE COLOR EL FONDO CADA 1.5" EN EL MODO RESPONSIVE */
+        background-color: rgb(11, 136, 140);
+        color: black;
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(60, 149, 137);
+        right: -100%; 
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #check:checked ~ .menu{
+        right: 0;
+    }
+
+    /* PERSONAS */
+    #personas{
+        flex-direction: column;
+    }
+
+    /* ICONOS */
+    .contenido-iconos{
+        flex-direction: column;
+    }
+    .contenido-iconos div{
+        border: none;
+    }
+
+    /* FORMULRIO */
+    .datos-form{
+        flex-direction: column;
+    }
+}
