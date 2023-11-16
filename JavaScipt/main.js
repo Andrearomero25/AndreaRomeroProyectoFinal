@@ -54,4 +54,12 @@ checkbox.onclick = () => {
         body.style.backgroundColor = "whitesmoke"
         body.style.color = "black"
     }
+    const footer = document.querySelector("footer")
+    if(checkbox.checked){
+        footer.style.backgroundColor = "black"
+        footer.style.color = "whitesmoke"  
+    } else {
+        footer.style.backgroundColor = "rgba(77, 77, 92, 0.6)"
+        footer.style.color = "black"
+    }
 }
